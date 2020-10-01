@@ -87,7 +87,8 @@ if __name__ == '__main__':
     Y_test = np.matrix(Y_test).T
     
     reg = LinearRegression()
-    reg.train(X_train, Y_train) 
+    reg.train(X_train, Y_train)  #you can use regularization parameter to reduce overfitting.
+
     reg.test(X_train, Y_train) 
     reg.test(X_test, Y_test)
 
